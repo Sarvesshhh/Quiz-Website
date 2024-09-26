@@ -1,0 +1,182 @@
+
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background : url(New.jpg) no-repeat;
+    background-size: 100vw 100vh;
+    background-color: #361948;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1, h2, h5, p {
+    margin: 0 0 15px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #333;
+}
+
+h5 {
+    font-size: 1.2em;
+    color: #555;
+}
+
+p {
+    font-size: 1em;
+    color: #666;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.start-container, #quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+    border-radius: 8px;
+    text-align: center;
+}
+#result-container {
+    max-width: 500px; 
+    height: 400px; 
+    overflow-y: auto; 
+    margin: 0 auto; 
+    padding: 20px; 
+    background-color: #ffffff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+    text-align: center; 
+}
+
+.result-text {
+    overflow-wrap: break-word; 
+    white-space: normal; 
+    line-height: 1.5; 
+    color: #333; 
+}
+
+
+#quiz-container {
+    text-align: left;
+}
+
+.d-none {
+    display: none;
+}
+
+#question-container {
+    margin-bottom: 20px;
+}
+
+#options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option-btn{
+    background-color: #f8f9fa;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+    transition: background-color 0.3s;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    font-size: 1em;
+}
+
+.option-btn:hover {
+    background-color: #e9ecef;
+}
+
+.option-btn.selected {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+/* Timer */
+#time {
+    font-size: 1.2em;
+    color: #e74c3c;
+    margin-top: 20px;
+}
+
+/* Navigation buttons */
+#navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Results page */
+#result-container h2 {
+    margin-bottom: 20px;
+}
+
+#detailed-results {
+    text-align: left;
+    margin-top: 10px;
+}
+
+#detailed-results div {
+    margin-bottom: 10px;
+}
+
+#detailed-results h5 {
+    font-size: 1.1em;
+    color: #444;
+}
+
+#detailed-results p {
+    font-size: 0.9em;
+    color: #777;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2em;
+    }
+    h2 {
+        font-size: 1.8em;
+    }
+    button {
+        font-size: 1em;
+        padding: 12px 22px;
+    }
+    #navigation-buttons button {
+        width: 45%;
+    }
+}
